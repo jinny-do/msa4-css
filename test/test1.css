@@ -1,0 +1,97 @@
+
+body{
+  background-color: rgb(237, 237, 237);
+}
+
+/* hr{
+  margin: 10px;
+} */
+.header{
+  text-align: center;
+  font-size: 60px;
+  background-color: rgb(55, 77, 116);
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.menu{
+  text-align: center;
+  background-color: rgb(81, 81, 81);
+  padding: 10px;
+  color: #fff;
+ 
+}
+
+.menu >a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container{
+  display: flex;
+   gap: 20px;
+   align-content: center;
+   width: 90%;           /* 전체 화면의 90%만 사용 (좌우 5%씩 여백) */
+  max-width: 1000px;    /* 모니터가 커도 1000px 이상으로는 안 커짐 */
+  margin: 0 auto;       /* 상하 0, 좌우 auto -> 이게 있어야 가운데로 옴 */
+   
+   
+
+}
+
+.about {
+  width: 60%;
+ 
+}
+
+ .signup{
+ width:40%;
+ }
+
+.about{
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  background-color: #fff;
+  border: 3px solid rgb(195, 195, 195);
+  margin: 20px;
+ 
+}
+
+.about >  h3{
+  margin-left: 20px;
+  color: rgb(76, 106, 156);
+}
+
+.image{
+  display: flex;
+  
+}
+.image>img{
+  margin: 20px;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.table>h3{
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+ 
+}
+
+table, tr, th, td{
+  border: 1px solid black;
+  margin: 10px;
+}
+
+tr, th, td {
+ width: 300px;
+ text-align: center;
+}
