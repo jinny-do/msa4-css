@@ -1,0 +1,31 @@
+/* 
+<스타일 우선순위>
+1. **id 스타일**
+- 태그의 특정 id 속성에 부여하는 스타일
+2. **클래스 스타일**
+- 태그의 특정 class 속성에 부여하는 스타일
+3. **타입 스타일**
+- 태그명으로 부여하는 스타일
+4. **전체 선택자**
++ 우선 순위가 같을 때 가장 마지막 스타일이 적용됨
+ */
+
+ #id-style {
+  color: blueviolet;
+}
+
+.class-style {
+  color: green;
+}
+
+ h1 {
+  color: red;
+} 
+
+/* * {
+  color: blue !important;
+} */
+
+h1 {
+  color: black;
+}
