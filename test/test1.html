@@ -1,111 +1,129 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./test1.css">
-  <title>test1</title>
-</head>
-<body>
-  <h1 class="header">My Web Profile</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test1.css" />
+    <title>test1</title>
+  </head>
+  <body>
+    <h1 class="header">My Web Profile</h1>
 
-  <div class="menu">
-    <a href="1">Home </a>
-    <span>|</span>
-    <a href="2"> About</a>
-    <span>|</span>
-    <a href="3"> Contact</a>
-  </div>
-    
-  <div class="container"> 
-     <div class="about">
-    <h3 class="title">About Me</h3>
-    <hr>
+    <div class="menu">
+      <a href="1">Home </a>
+      <span>|</span>
+      <a href="2"> About</a>
+      <span>|</span>
+      <a href="3"> Contact</a>
+    </div>
 
-    <div class="image">
-    <img src="../img/cat.png" alt="cat">
+    <div class="container">
+      <div class="about">
+        <h3 class="title">About Me</h3>
+        <hr />
 
-  <div class="info">
-    <p>Hello! I'm learning web development.</p>
-    <p>I love coding, traveling, and watching movies.</p>
-    
-    <h3>My Hobbies:</h3>
-    <hr>
-    <ul>
-      <li>coding</li>
-      <li>Hiking</li>
-      <li>Photograp</li>
-    </ul>
-  </div>
-  </div>
-  
-  <div class="table">
-  <h3>My Weekly Schedule</h3>
-  <hr>
-  <table>
-    <tr >
-      <th>Day</th>
-      <th>Activity</th>
-      <th>Time</th>
-    </tr>
+        <div class="image">
+          <img src="../img/cat.png" alt="cat" />
 
-    <tr>
-      <th>Monday</th>
-      <td>Study HTML</td>
-      <td>10:00 AM</td>
-    </tr>
+          <div class="info">
+            <p>Hello! I'm learning web development.</p>
+            <p>I love coding, traveling, and watching movies.</p>
 
-    <tr>
-      <th>Wednesday</th>
-      <td>Go Hiking</td>
-      <td>2:00 PM</td>
-    </tr>
-    
-      <tr>
-      <th>Friday</th>
-      <td>Watch Movies</td>
-      <td>08:00 PM</td>
-    </tr>
-  </table>
-  </div>
-  </div>
+            <h3>My Hobbies:</h3>
+            <hr />
+            <ul>
+              <li>coding</li>
+              <li>Hiking</li>
+              <li>Photograp</li>
+            </ul>
+          </div>
+        </div>
 
-  <div class="signup">
-    <h3 class="title">Sign Up</h3>
-    <hr>
-    <form action="">
-      <label for="name">Username : </label>
-      <input type="text" id="name" name="name">
-      <br>
-      <label for="email">Email : </label>
-      <input type="email" id="email">
-      <br>
-      <label for="gender">Gender :</label>
-      <input type="radio" id="gender" name="male" checked> 
-      <label for="gender">Male</label>
-      <input type="radio" name="female" id="gender">
-      <label for="gender">Female</label>
-    </form>
+        <div class="table">
+          <h3>My Weekly Schedule</h3>
+          <hr />
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Activity</th>
+              <th>Time</th>
+            </tr>
 
-    <label for="country">Country : </label>
-    <textarea name="country" id="country"></textarea>
+            <tr>
+              <th>Monday</th>
+              <td>Study HTML</td>
+              <td>10:00 AM</td>
+            </tr>
 
-    <label for="comments">Comments : </label>
-    <input type="checkbox" id="comments">
-    <label for="comments">Coding</label>
+            <tr>
+              <th>Wednesday</th>
+              <td>Go Hiking</td>
+              <td>2:00 PM</td>
+            </tr>
 
-    <input type="checkbox" id="comments">
-    <label for="comments">Coding</label>
+            <tr>
+              <th>Friday</th>
+              <td>Watch Movies</td>
+              <td>08:00 PM</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-    <input type="checkbox" id="comments">
-    <label for="comments">Coding</label>
+      <div class="signup">
+        <h3 class="title">Sign Up</h3>
+        <hr />
+        <form action="" class="infomation">
+          <label for="name">Username : </label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <label for="email">Email : </label>
+          <input type="email" id="email" />
+          <br />
 
-    <input type="checkbox" id="comments">
-    <label for="comments">Coding</label>
+          <label>Gender :</label>
+          <input type="radio" id="male" name="gender" value="male" checked />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
 
-  </div>
+          <label for="country">Country : </label>
+          <textarea name="country" id="country"></textarea>
+        </form>
 
-  </div>
+        <form action="" class="interes">
+          <label class="inter"> Interests : </label> <br />
+          <input type="checkbox" id="coding" name="comments" value="coding" />
+          <label for="coding">Coding</label>
 
-</body>
+          <input type="checkbox" id="music" name="comments" value="music" />
+          <label for="music">Music</label>
+
+          <input type="checkbox" id="sport" name="comments" value="sport" />
+          <label for="sport">Sport</label>
+          <br />
+
+          <input type="checkbox" id="movie" name="comments" value="movie" />
+          <label for="movie">Movie</label>
+        </form>
+
+        <div class="age">
+          <h3>Choose Age Group</h3>
+          <hr />
+          <form action="" class="order">
+            <input type="radio" name="ages" id="under18" value="under18" />
+            <label for="under18">Under 18</label>
+
+            <input type="radio" name="ages" id="age18-30" value="18-30" />
+            <label for="age18-30">18-30</label>
+
+            <input type="radio" name="ages" id="age31plus" value="31plus" />
+            <label for="age31plus">31+</label>
+          </form>
+          <hr />
+        </div>
+        <button type="submit" class="sub">Submit</button>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,29 +1,28 @@
-
-body{
+body {
   background-color: rgb(237, 237, 237);
 }
 
 /* hr{
   margin: 10px;
 } */
-.header{
+.header {
   text-align: center;
   font-size: 60px;
   background-color: rgb(55, 77, 116);
   padding: 15px;
   color: #fff;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
-.menu{
+.menu {
   text-align: center;
   background-color: rgb(81, 81, 81);
   padding: 10px;
   color: #fff;
- 
 }
 
-.menu >a {
+.menu > a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -31,24 +30,20 @@ body{
   padding: 10px;
 }
 
-.container{
+.container {
   display: flex;
-   gap: 00px;
-   align-content: center;
-   width: 90%;           /* 전체 화면의 90%만 사용 (좌우 5%씩 여백) */
-  max-width: 1000px;    /* 모니터가 커도 1000px 이상으로는 안 커짐 */
-  margin: 0 auto;       /* 상하 0, 좌우 auto -> 이게 있어야 가운데로 옴 */
-   
-   
-
+  gap: 00px;
+  align-content: center;
+  width: 90%; /* 전체 화면의 90%만 사용 (좌우 5%씩 여백) */
+  max-width: 1000px; /* 모니터가 커도 1000px 이상으로는 안 커짐 */
+  margin: 0 auto; /* 상하 0, 좌우 auto -> 이게 있어야 가운데로 옴 */
 }
 
+.signup {
+  width: 40%;
+}
 
- .signup{
- width:40%;
- }
-
-.about{
+.about {
   /* display: flex;
   justify-content: flex-start;
   align-items: flex-start; */
@@ -56,55 +51,53 @@ body{
   border: 3px solid rgb(195, 195, 195);
   margin: 20px;
   width: 60%;
- 
- 
 }
 
-.title{
+.title {
   margin-left: 20px;
   color: rgb(76, 106, 156);
 }
 
-.image{
+.image {
   display: flex;
-  
 }
-.image>img{
+.image > img {
   margin: 20px;
   border-radius: 10px;
   margin-top: 0;
 }
 
-.table>h3{
+.table > h3 {
   margin: 20px;
 }
 
 table {
   border-collapse: collapse;
- 
 }
 
-table, tr, th, td{
+table,
+tr,
+th,
+td {
   border: 1px solid black;
   margin: 10px;
 }
 
-tr, th, td {
- width: 300px;
- text-align: center;
+tr,
+th,
+td {
+  width: 300px;
+  text-align: center;
 }
 
-
-
-tr >th {
+tr > th {
   background-color: rgb(229, 229, 229);
 }
 
 .signup {
-   background-color: rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237);
   border: 3px solid rgb(195, 195, 195);
   margin: 20px;
-  
 }
 
 input {
@@ -116,4 +109,34 @@ input {
 textarea {
   border: 2px solid rgb(225, 225, 225);
   border-radius: 6px;
+}
+
+.infomation label {
+  margin: 20px;
+}
+
+.inter {
+  margin-left: 20px;
+}
+
+.interes input {
+  margin-left: 20px;
+}
+
+.age h3 {
+  margin-left: 20px;
+}
+
+.order input {
+  margin-left: 20px;
+}
+
+.sub {
+  display: block; /* 혼자 한 줄을 다 차지하는 블록 요소로 변경 */
+  margin: 0 auto; /* 상하 마진은 0, 좌우 마진은 남은 여백을 똑같이 나눠 가짐 (가운데 정렬) */
+  width: 100px;
+  padding: 10px; /* (선택사항) 버튼 내부 여백을 줘서 디자인을 개선 */
+  border: none;
+  background-color: #426a9b;
+  color: white;
 }
