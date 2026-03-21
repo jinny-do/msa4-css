@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./test2.css">
-  <title>test2</title>
-</head>
-<body>
-  <div class="container">
-    <div class="box">
-      <h1>USER PROFILE FORM</h1>
-      <p>Photo Upload Area</p>
-      <img src="../img/profile.png" alt="profile">
-      <br>
-      <button class="up" type="submit">UPLOAD PHOTO</button>
-      <br>
-      <div class="info">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test2.css" />
+    <title>test2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>USER PROFILE FORM</h1>
+        <p>Photo Upload Area</p>
+        <img src="../img/profile.png" alt="profile" />
+        <br />
+        <button class="up" type="submit">UPLOAD PHOTO</button>
+        <br />
+        <div class="info">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" />
 
-         <label for="job">Job Title</label>
-        <input type="text" id="job" name="job">
+          <label for="job">Job Title</label>
+          <input type="text" id="job" name="job" />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="bio">Brief Bio</label>
+          <textarea name="bio" id="bio"></textarea>
+        </div>
+
+        <div class="check">
+          <span>Online Links to Include</span>
+          <form action="">
+            <div>
+              <input
+                type="checkbox"
+                name="link"
+                id="portfolio"
+                value="portfolio"
+              />
+              <label for="portfolio">Portfolio</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="link"
+                id="LinkedIn"
+                value="LinkedIn"
+              />
+              <label for="LinkedIn">LinkedIn</label>
+            </div>
+            <div>
+              <input type="checkbox" name="link" id="GitHub" value="GitHub" />
+              <label for="GitHub">GitHub</label>
+            </div>
+          </form>
+        </div>
+        <div class="save">
+          <button type="submit">SAVE PROFILE</button>
+        </div>
       </div>
-      
     </div>
-  </div>
-</body>
+  </body>
 </html>
