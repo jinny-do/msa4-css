@@ -1,0 +1,74 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 초기화 설정 */ 
+
+body {
+  padding: 5px;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+/* header 관련 */
+.header {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.header span {
+  color: #da9d2d;
+}
+
+/* main 관련 */
+.info {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.check {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.info p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info h2 {
+  color: #e93232;
+}
+
+.highlight {
+  color: #0c0cd4;
+}
+
+.tel {
+  margin-top: 25px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
