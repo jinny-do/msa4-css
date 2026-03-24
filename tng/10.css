@@ -1,0 +1,41 @@
+/* 브라우저 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  border: 1px solid #000;
+  height: 700px;
+  margin: auto;
+  /* position: relative; */
+}
+
+.pos {
+  border: 1px solid #000;
+  width: 200px;
+  height: 210px;
+  /* position: absolute; 
+     이렇게 주면 밑에 포지션 안 줘도 됨 */
+}
+
+.p-relative1 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.p-relative2 {
+  position: relative;
+  left: 300px;
+  bottom: 100px;
+}
+
+.p-relative3 {
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+  /* background: linear-gradient(45deg,#ffa8a8,#cd3a3a,#ffc1c1); */
+}
