@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./14.css">
+  <title>14 tng</title>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <legend><h2>I wnat YOU!</h2></legend>
+
+        <div class="info">
+          <div class="info-input">
+            <label for="name" class="star">이름</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="info-input">
+            <label for="age" class="star">나이</label>
+            <input type="number" id="age" name="age" min="20" required>
+          </div>
+
+          <div class="info-input">
+            <label class="star">성별</label>
+
+            <input type="radio" id="male" name="gender" class="focus-gen" required>
+            <label for="male" class="focus-gender">남자</label>
+
+            <input type="radio" id="female" name="gender" class="focus-gen" required>
+            <label for="female" class="focus-gender">여자</label>
+          </div>
+
+          <div class="req info-input">
+            <label for="request">요청사항</label>
+            <textarea name="request" id="request" placeholder="요청 사항 입력"></textarea>
+          </div>
+          <br>
+          <div class="btn-chk">
+            <button type="submit" class="btn">보내기</button>
+            <span class="chk">내용을 다시 한 번 확인해 주세요.</span>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
