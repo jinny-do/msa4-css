@@ -7,16 +7,26 @@
 body {
   background-color: #d6d6d6;
   padding: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
+  position: relative;
   display: grid;
-  width: 80%;
+  width: 70%;
   margin: auto;
   background-color: #fff1fc;
-  padding: 10px 10px;
-  
-  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 10px; /* 안쪽으로 들어가는 거리 */
+  border: 2px dashed #d6d6d6;
+  pointer-events: none;
+  border-radius: 10px;
 }
 
 .main {
@@ -24,4 +34,10 @@ body {
   width: 100%;
   margin: auto;
   background-color: #fff;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.total {
+  border: 1px solid #000;
 }
