@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  background-color: #808080;
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.item {
+  border: 1px solid #000;
+  background-color: #679fa0;
+  flex: 1;
+}
+
+/* .box2 > .item:last-child {
+  flex:2;
+} */
