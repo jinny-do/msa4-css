@@ -4,16 +4,24 @@
   box-sizing: border-box;
 }
 
+
+
 body {
-  background-color: #d6d6d6;
+  background-color: #aeaeae;
   padding: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+
 }
 
 .container {
   position: relative;
-  display: grid;
+  display: flex;
   width: 70%;
+  height: 600px;
   margin: auto;
   background-color: #fff1fc;
   padding: 20px;
@@ -30,14 +38,162 @@ body {
 }
 
 .main {
-  display: grid;
+  display: flex;
   width: 100%;
   margin: auto;
-  background-color: #fff;
+  background-color: #e9e9e9;
   padding: 20px;
   justify-content: flex-start;
+  height: 100%;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
 }
 
 .total {
-  border: 1px solid #000;
+  display: flex;
+  /* border: 1px solid #000; */
+  justify-content: space-between;
+  
+}
+
+.date {
+  display: flex;
+  gap: 30px;
+}
+
+.address {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  gap: 0;
+}
+
+.row-box {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  
+  
+}
+
+.profile {
+  width: 20%;
+  background-color: #fff;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.p-img >span {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.menu a {
+  background-color: #ddb2d3;
+  width: 80px;
+  text-decoration: none;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-end-end-radius:  5px;
+  padding: 4px;
+}
+
+.menu a:hover {
+  background-color: #c08bb3;
+}
+
+.p-info > form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.calender {
+  width: 93%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #eeeeeea2;
+}
+
+.memo {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.diary {
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  height: 250px;
+  box-shadow: 0 4px 10px #0000001a;
+  display: flex;
+  flex-direction: column;
+}
+
+.diary > span {
+  color: #94bde7;
+  padding: 10px;
+}
+
+.d-memo {
+  padding: 20px;
+  text-align: center;
+  line-height: 30px;
+  flex: 1;               /* 남은 공간 다 차지 */
+  overflow-y: auto;      /* 스크롤 생성 */
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn>button {
+  padding: 0px 20px;
+  border: none;
+  background-color: #f6c0e9;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.btn>button:hover {
+  background-color: #c08bb3;
 }
