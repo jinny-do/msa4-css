@@ -68,3 +68,154 @@
   max-width: 500px;
   object-fit: cover;
 }
+
+/* main ------------------------------- */
+.main {
+  padding: 100px;
+}
+
+.card-box-top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #0000001a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-item {
+  grid-row: 1 / 3;
+}
+
+.card-box-bt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.bt-item {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.item-img {
+  padding-top: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.item > span {
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.item > p {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.footer {
+  background-color: #f0f4f7;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  min-height: 50vh;
+}
+
+.footer-img {
+  background-image: url("../img/cat2.jpg");
+  width: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.we-info {
+  min-height: 40vh;
+}
+
+.footer-info > h1 {
+  font-size: 40px;
+}
+
+.footer-info > p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  /* --- 메인 영역 모바일 반응형 --- */
+  .main {
+    padding: 20px; /* 기존 100px에서 모바일 화면에 맞게 여백 축소 */
+  }
+
+  /* 1. 상단 카드 섹션 1단 세로 배치 */
+  .card-box-top {
+    grid-template-columns: 1fr;
+  }
+
+  .top-item {
+    grid-row: auto; /* PC 버전의 그리드 행 확장(1 / 3) 설정 초기화 */
+  }
+
+  /* 2. 하단 카드 섹션 1단 세로 배치 */
+  .card-box-bt {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .bt-item {
+    grid-column: auto; /* PC 버전의 큰 카드 가로 확장(1 / 3) 설정 초기화 */
+    grid-row: auto; /* 세로 확장 설정 초기화 */
+  }
+
+  /* --- 푸터 영역 모바일 반응형 --- */
+  .footer {
+    flex-direction: column; /* 가로 배열을 세로 배열로 변경 */
+    height: auto; /* 고정된 50vh 높이를 해제하여 내용물에 맞게 늘어나도록 변경 */
+    padding: 20px;
+  }
+
+  .footer-img {
+    width: 100%; /* 고정된 600px 너비를 해제하고 화면에 꽉 차게 변경 */
+    height: 250px; /* 모바일에서 이미지가 보일 수 있도록 적절한 높이 지정 */
+  }
+
+  .we-info {
+    height: auto; /* 고정된 40vh 높이 해제 */
+  }
+
+  .footer-info > h1 {
+    font-size: 28px; /* 제목 크기 축소 */
+    margin-bottom: 10px;
+  }
+
+  .footer-info > p {
+    font-size: 16px; /* 본문 크기 축소 */
+    word-break: keep-all; /* 단어 단위 줄바꿈 유지 */
+  }
+
+  .intro-title {
+    font-size: 28px;
+  }
+
+  .nav {
+    font-size: 10px;
+  }
+
+  .nav-list {
+    font-size: 8px;
+  }
+}
