@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-info {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* 화면 줄어들어도 줄바꿈 방지해줌 */
+  white-space: nowrap;
+  border-bottom: 1px solid #000;
+}
+
+.header-box {
+  display: flex;
+  gap: 20px;
+}
+
+.header-category {
+  display: flex;
+  align-items: stretch;
+  font-size: 18px;
+}
+
+.header-category > a {
+  display: block;
+  padding: 20px 60px;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-category > a:hover {
+  color: #d9ff0e;
+  background-color: #000;
+}
+
+.header-logo {
+  border-right: 1px solid #000;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #d9ff0e;
+  text-decoration: none;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px 0 0;
+  font-size: 18px;
+}
+
+.login > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  gap: 10px;
+}
+
+.header-title > h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.header-title > p {
+  font-size: 21px;
+  background-color: #d9ff0e;
+  padding: 2px 30px;
+}
+
+.main-img {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+}
+
+.title-img {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
