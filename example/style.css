@@ -90,10 +90,25 @@ body {
 
 .header-title > p {
   font-size: 21px;
-  background-color: #d9ff0e;
   padding: 2px 30px;
+  display: inline-block; /* 배경이 글자 길이에 맞게 설정되도록 권장 */
+
+  /* 기본 배경색 대신 그라데이션 사용 */
+  background-image: linear-gradient(#d9ff0e, #d9ff0e);
+  background-repeat: no-repeat;
+  background-size: 0% 100%; /* 처음에는 너비가 0 */
+  background-position: left; /* 오른쪽에서 시작 */
+
+  /* 애니메이션 실행 */
+  animation: draw-line 0.8s ease-out forwards;
 }
 
+/* 슥 긋는 애니메이션 정의 */
+@keyframes draw-line {
+  to {
+    background-size: 100% 100%; /* 마지막엔 100% 채워짐 */
+  }
+}
 .main-img {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
