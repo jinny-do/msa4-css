@@ -97,7 +97,7 @@ body {
   background-image: linear-gradient(#d9ff0e, #d9ff0e);
   background-repeat: no-repeat;
   background-size: 0% 100%; /* 처음에는 너비가 0 */
-  background-position: left; /* 오른쪽에서 시작 */
+  background-position: left; /* 왼쪽에서 시작 */
 
   /* 애니메이션 실행 */
   animation: draw-line 0.8s ease-out forwards;
